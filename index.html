@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Survey form to improve x college service and benefits to students">
+    <meta name="author" content="Jason Portillo">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>College Form</title>
+</head>
+<body>
+    <header id="form-header">
+        <h1 id="title" class="header-text">College Survey Form</h1>
+        <p id="description" class="heading-p">Thank you for helping us to be a better place to study</p> 
+      </header>
+      
+      <form id="survey-form">
+        <div class="input-container">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" placeholder="enter your name" class="form-input" required>
+        </div>
+        <div class="input-container">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="email" placeholder="enter your email" class="form-input" required>
+        </div>
+        <div class="input-container">
+          <label id="number-label" for="number">Age <span class="age-span">(optional)</span></label>
+          <input id="number" type="number" placeholder="age" min="1" max="150" class="form-input">
+        </div>
+        <div class="input-container">
+          <p class="input-p">What's your major?</p>
+          <select id="dropdown" name="major" class="form-input" required>
+            <option selected disable value>Select current major</option>
+            <option value="english">English</option>
+            <option value="history">History</option>
+            <option value="engineering">Engineering</option>
+            <option value="psychology">Psychology</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <p class="input-p">Would you recommend our college?</p>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>
+            Definitely
+        </label>
+        <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio">
+            Maybe
+          </label>
+        <label>
+            <input name="user-recommend" value="not sure" type="radio" class="input-radio">
+            Not sure
+          </label>
+        </div>
+        <div class="input-container">
+          <p class="input-p">What's your favorite benefit from our college?</p>
+          <select id="dropdown" name="favorite-benefit" class="form-input" required>
+            <option selected disable value>Select a benefit</option>
+            <option value="extracurricular classes">Extracurricular classes</option>
+            <option value="free book">Free Books</option>
+            <option value="computer">Computer</option>
+            <option value="sport center">Sport Center</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <p class="input-p">What should we improve?
+            <span class="checkbox-span">(check all the boxes you want)</span></p>
+          <label>
+            <input name="should-improve" value="benefits" type="checkbox" class="input-checkbox">
+            Benefits
+         </label>
+         <label>
+            <input name="should-improve" value="classrooms" type="checkbox" class="input-checkbox">
+            Classrooms
+          </label>
+         <label>
+            <input name="should-improve" value="not-sure" type="checkbox" class="input-checkbox">
+            Accademic Offer
+          </label>
+          <label>
+            <input name="should-improve" value="class-methodology" type="checkbox" class="input-checkbox">
+            Teaching Methodologies
+          </label>
+          <label>
+            <input name="should-improve" value="classes-online" type="checkbox" class="input-checkbox">
+            Classes Online
+          </label>
+          <label>
+            <input name="should-improve" value="classes-schedules" type="checkbox" class="input-checkbox">
+            Class Schedules
+          </label>
+        </div>
+        <div class="input-container">
+          <p class="input-p">Comments and Suggestions:</p>
+          <textarea id="comments" class="form-input textarea-input" name="comment" placeholder="enter your comments..."></textarea>
+        </div>
+        <div class="input-container">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+</body>
+</html>
