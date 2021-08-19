@@ -21,7 +21,7 @@ body {
       var(--color-gradient-1),
       var(--color-gradient-2)
     ),
-    url("assets/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg");
+    url("/assets/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
